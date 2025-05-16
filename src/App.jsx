@@ -1,8 +1,11 @@
-import './App.css';
+import "./styles/theme.css";
+import "./styles/elobal.css":
+
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
         <img src="Octocat.png" className="App-logo" alt="logo" />
         <p>
