@@ -1,16 +1,16 @@
 import "./styles/theme.css";
-import "./styles/elobal.css";
-import { MyText} from "./compo"
+import "./styles/global.css";
+import { MyText } from "./components/MyText";
 
+   export default function App() {
+    return (
+    // React Fragment 
+    <>
+    <MyText />
+    <MyText />
+    <MyText />
+    </>
+    );
+  }  
 
-export default
-function App() {
-  return (
-  <>
-  <MyText/>
-  <MyText/>
-  <MyText/>
-  </>
-  );
-}
 
