@@ -6,8 +6,11 @@ import { MyText list } from "./components/MyTextList.jss";
 
 export default function App() {
   return (
-    // React Fragment 
     <>
+    <h1 classname={styles.title}>Lista de textos<h1/>
+    <div classname=
+    
+    
   ];
 
 

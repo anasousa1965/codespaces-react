@@ -1,9 +1,31 @@
 .container {
-   height: 100;
-   display: fiex;
-   fiex diretion: rom; /* colum
+   align-content: center; /*
 
-   /* eixo horizontal 
+   /* EIXO HORIZONTAL - Main Axis */flex-start flex-end center 
 
-   /* eixo vertical
+   /* EIXO VERTICAL - Cross Axis */flex-start flex-end center baseline stretch
+   align-items: center; 
+
+   .title {
+      margin-top: 3rem;
+      font-size: 10rem;
+      font-weight: bolder;
+      text-align: center;
+
+      @media (max-width: 1200px) {
+         fonte-size: 6rem;
+
+
+         @media (max-width: 768px) {
+         fonte-size: 6rem;
+      }
+      
+
+
+   
+
+   }
+
+
+
 }
