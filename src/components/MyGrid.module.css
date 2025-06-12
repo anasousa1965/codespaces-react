@@ -1,5 +1,5 @@
 .container {
-    display: grid;Add commentMore actions
+  display: grid;
 
   grid-template-areas:
     "header1 header1"
@@ -33,7 +33,7 @@
 
 .aside {
   grid-area: aside;
-  background-color: darkseagreen;
+  background-color: rgb(143, 161, 188);
 
   @media (max-width: 1200px) {
     display: none;
@@ -42,7 +42,7 @@
 
 .footer {
   grid-area: footer;
-  background-color: darkslategray;
+  background-color: rgba(79, 65, 47, 0.856);
 }
 
 .grid {
@@ -67,10 +67,3 @@
   text-align: center;
   height: 20rem;
 }
-
-
-
-
-
-
-

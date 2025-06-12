@@ -1,9 +1,6 @@
 import styles from "./MyGrid.module.css";
 
-export function MyGrid () {
-
-}
-
+export function MyGrid() {
   return (
     <div className={styles.container}>
       <header className={styles.header1} />
@@ -36,3 +33,4 @@ export function MyGrid () {
       <footer className={styles.footer} />
     </div>
   );
+}

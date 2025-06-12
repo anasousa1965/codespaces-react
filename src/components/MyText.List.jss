@@ -1,27 +1,30 @@
-import "./styles/theme.css";
-import "./styles/global.css";
-import { MyText list } from "./components/MyTextList.jss";
+import styles from "./MyTextList.module.css";More actions
+import { MyText } from "./MyText";
 
-
-
-export default function App() {
-  return (
-    <>
-    <h1 classname={styles.title}>Lista de textos<h1/>
-    <div classname=
-    
-    
+export function MyTextList() {
+  const texts = [
+    { title: "Meu título", text: "Meu texto" },
+    { title: "Meu título", text: "Meu texto" },
+    { title: "Meu título", text: "Meu texto" },
+    { title: "Meu título", text: "Meu texto" },
+    { title: "Meu título", text: "Meu texto" },
+    { title: "Meu título", text: "Meu texto" },
   ];
 
-
-
-{texts.map((text, index) => {
-        return (
-          <MyText key={index} title={`${text.title} ${index + 1}`}>
-            {text.text}
-          </MyText>
-            );
-      })}
+  return (
+    <>
+      <h1 className={styles.title}>Lista de Textos</h1>
+      <div className={styles.container}>Add commentMore actions
+        {texts.map((text, index) => {
+          return (
+            <MyText key={index} title={`${text.title} ${index + 1}`}>
+              {text.text}
+            </MyText>
+          );
+        })}
+      </div>
     </>
-  );
+    );
 }
+    
+      
