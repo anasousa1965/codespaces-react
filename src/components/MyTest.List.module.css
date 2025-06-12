@@ -1,31 +1,10 @@
-.container {
-   align-content: center; /*
+.container {Add commentMore actions
+    /* margin: 0 auto; */
+    max-width: 50rem;
 
-   /* EIXO HORIZONTAL - Main Axis */flex-start flex-end center 
-
-   /* EIXO VERTICAL - Cross Axis */flex-start flex-end center baseline stretch
-   align-items: center; 
-
-   .title {
-      margin-top: 3rem;
-      font-size: 10rem;
-      font-weight: bolder;
-      text-align: center;
-
-      @media (max-width: 1200px) {
-         fonte-size: 6rem;
-
-
-         @media (max-width: 768px) {
-         fonte-size: 6rem;
-      }
-      
-
-
-   
-
-   }
-
-
-
+    @media (max-width: 768px) {
+        width: 80vw;
+    }
 }
+
+.div {

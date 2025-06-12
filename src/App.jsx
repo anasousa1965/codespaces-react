@@ -1,20 +1,20 @@
-import "./styles/theme.css";
+import "./styles/theme.css";Add commentMore actions
 import "./styles/global.css";
-import { MyText list } from "./components/MyTextList";
 
-export default function App() {
-  
+// import { MyTextList } from "./components/MyTextList";
+import { MyGrid } from "./components/MyGrid";
+
+export default function App() {Add commentMore actions
 
   return (
-    // React Fragment 
+    // React Fragment
     <>
-
-      
-      <MyTextList />
+    
+    <MyGrid />Add commentMore actions
     </>
-    <My grid></My>
   );
 }
+
 
 
 
