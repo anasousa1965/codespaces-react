@@ -10,7 +10,9 @@ export default function App() {
     // React Fragment
     <>
     
-    <MyGrid />
+    <footer />
+    <header />
+    <main />
     </>
   );
 }
