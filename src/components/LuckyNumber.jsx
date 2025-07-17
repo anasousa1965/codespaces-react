@@ -7,14 +7,14 @@ export function LuckyNumber() {
   const [message, setMessage] = useState("");
 
   function handleClick() {
-    const newNumber = Math.floor(Math.random() * 40) + 1;
+    var n = Math.floor(Math.random() * 40) + 1;
+    setLuckyNumber(n);
 
-    if (history.includes(newNumber)) {
-      setMessage(`Já foi sorteado!`);
+     if (array.includes(n)) {
+      setMessage(`The number ${n} has already been chosen!`);
     } else {
-      setLuckyNumber(newNumber);
-      setHistory([...history, newNumber]);
       setMessage("");
+      setArray([...array, n]);
     }
   }
 
@@ -25,19 +25,17 @@ export function LuckyNumber() {
       ) : (
         <h1>Lucky Number = {luckyNumber}</h1>
       )}
-
-       <button className={styles.button} onClick={handleClick}>
+       {message && <p>{message}</p>}
+      <button className={styles.button} onClick={handleClick}>
         I'm Feeling Lucky Today!
       </button>
-
-            {message && <p className={styles.message}>{message}</p>}
-
-             {history.length > 0 && (
-        <div className={styles.history}>
-          <h2>Números já sorteados:</h2>
-          <p>{history.join(", ")}</p>
+       {array.length > 0 && (
+        <div>
+          <h3>Lucky Numbers Array:</h3>
+          <p>[{[...array].toString()}]</p>
         </div>
       )}
     </div>
   );
 }
+
