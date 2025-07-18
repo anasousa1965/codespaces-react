@@ -3,7 +3,7 @@ import styles from "./LuckyNumber.module.css";
 
 export function LuckyNumber() {
   const [luckyNumber, setLuckyNumber] = useState(0);
-  const [history, setHistory] = useState([]);
+  const [array, setArray] = useState([]);
   const [message, setMessage] = useState("");
 
   function handleClick() {
@@ -23,13 +23,13 @@ export function LuckyNumber() {
       {luckyNumber === 0 ? (
         <h1>Lucky Number 🎲</h1>
       ) : (
-        <h1>Lucky Number = {luckyNumber}</h1>
+  <h1>Lucky Number = {luckyNumber}</h1>
       )}
-       {message && <p>{message}</p>}
+        {message && <p>{message}</p>}
       <button className={styles.button} onClick={handleClick}>
         I'm Feeling Lucky Today!
       </button>
-       {array.length > 0 && (
+      {array.length > 0 && (
         <div>
           <h3>Lucky Numbers Array:</h3>
           <p>[{[...array].toString()}]</p>
@@ -38,4 +38,4 @@ export function LuckyNumber() {
     </div>
   );
 }
-
+    

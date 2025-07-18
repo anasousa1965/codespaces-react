@@ -30,12 +30,33 @@ import { Product } from "./Product";
     }, 2000);
   }, []);
   return (
-    <div className={styles.container}></div>
+    <div className={styles.container}>
     <div className={styles.grid}>
         {products.map((product) => (
           <Product key={product.id} product={product} addToCart={addToCart} />
-        ))}
+ ))}
       </div>
-       {loading && (
+      {loading && (
         <div>
           <CircularProgress
+           // size="sm"
+            thickness={5}
+            style={{ margin: "2rem auto", display: "block" }}
+            sx={{
+              color: "#001111",
+            }}
+          />
+          <p>Loading products...</p>
+        </div>
+      )}
+      {error && <p>Error loading products: {error.message}</p>}
+    </div>
+  );
+}
+
+
+
+   
+    
+      
+   
